@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# ..except:
+!.gitignore
+!vim-plug/
+!vim-plug/*
+!plug-config/
+!plug-config/*
+!init.vim
+
+# never include these
+*~
+*.swap

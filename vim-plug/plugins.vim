@@ -42,6 +42,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kien/ctrlp.vim'
     " Make keybindings easier to find
     Plug 'liuchengxu/vim-which-key'
+    " Edit vertically multiple lines
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+   
 
-
-  call plug#end()
+call plug#end()

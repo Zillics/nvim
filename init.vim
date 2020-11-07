@@ -5,6 +5,7 @@ let g:blamer_enabled = 1 " Set git blame on
 let g:doxygen_enhanced_color=1
 let g:load_doxygen_syntax=1
 
+set autoread
 set expandtab
 set shiftwidth=2
 set lcs=trail:·,tab:»·
@@ -38,7 +39,6 @@ let g:vim_markdown_folding_disabled = 1
 
 let g:vim_indent_guides_start_level = 2
 
-
 set laststatus=2
 set termguicolors
 
@@ -61,7 +61,13 @@ source ~/.vimrc
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 
+" Nerdtree
 "
+let NERDTreeShowHidden=1
+
+" Ctrl p
+let g:ctrlp_working_path_mode = '' "ignore all files except ones existing in current working dir
+
 " Key shortcuts
 "
 nnoremap <leader>t :FloatermNew! --wintype=normal --height=10 if [[ -n $(find . -name "activate")  ]]; then source $(find . -name "activate");fi<CR>

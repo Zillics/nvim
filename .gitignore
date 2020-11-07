@@ -8,7 +8,7 @@
 !plug-config/
 !plug-config/*
 !init.vim
-
+!.vimrc
 # never include these
 *~
 *.swap

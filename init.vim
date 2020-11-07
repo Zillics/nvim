@@ -1,21 +1,14 @@
-let mapleader="\<Space>"
+" nvim vs vim compatibility
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+
+" import plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 let g:blamer_enabled = 1 " Set git blame on
 let g:doxygen_enhanced_color=1
 let g:load_doxygen_syntax=1
-
-set autoread
-set expandtab
-set shiftwidth=2
-set lcs=trail:·,tab:»·
-set list
-set cursorline
-set number
-set undofile
-set spell spelllang=en_us
-set spellcapcheck=""
-set signcolumn=yes
 
 let g:ycm_confirm_extra_conf = 0
 
@@ -36,28 +29,15 @@ colorscheme gruvbox
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
 
-
 let g:vim_indent_guides_start_level = 2
-
-set laststatus=2
-set termguicolors
 
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
 
-set backup
 
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
-
-filetype on
-filetype plugin on
-filetype indent on " file type based indentation
-autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-
-source ~/.vimrc
+" plugin configs
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 

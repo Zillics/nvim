@@ -24,6 +24,7 @@ let g:gruvbox_improved_strings=0
 let g:gruvbox_improved_warnings=1
 let g:gruvbox_undercurl=1
 let g:gruvbox_contrast_dark="hard"
+
 colorscheme gruvbox
 
 let g:vim_markdown_frontmatter = 1
@@ -50,7 +51,7 @@ let g:ctrlp_working_path_mode = '' "ignore all files except ones existing in cur
 
 " Key shortcuts
 "
-nnoremap <leader>t :FloatermNew! --wintype=normal --height=10 if [[ -n $(find . -name "activate")  ]]; then source $(find . -name "activate");fi<CR>
+nnoremap <leader>t :FloatermNew! --wintype=floating --position=bottomleft --height=25 --width=150 if [[ -n $(find . -name "activate")  ]]; then source $(find . -name "activate");fi<CR>
 nnoremap <leader>r :FloatermNew! --wintype=floating --position=topright --width=0.5 --height=0.95 if [[ -n $(find . -name "activate")  ]]; then source $(find . -name "activate");fi<CR>
 nnoremap <F7> :tabp<CR>
 nnoremap <F8> :tabn<CR>

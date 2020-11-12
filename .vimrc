@@ -42,3 +42,9 @@ set spellcapcheck=""
 set lcs=trail:·,tab:»·
 set list
 
+" Split open at the right or below
+set splitbelow 
+set splitright
+
+
+colorscheme slate

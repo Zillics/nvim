@@ -11,8 +11,6 @@ set shiftwidth=4
 set expandtab
 " autoread file if it has been changed outside vim
 set autoread
-" Highlight current line
-set cursorline
 " continue line horizontally forever
 set nowrap
 " line numbering on
@@ -43,8 +41,7 @@ set lcs=trail:·,tab:»·
 set list
 
 " Split open at the right or below
-set splitbelow 
+set splitbelow
 set splitright
-
 
 colorscheme slate

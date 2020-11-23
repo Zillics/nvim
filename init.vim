@@ -3,6 +3,11 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vimrc
 
+" Highlight current line
+set cursorline
+
+set splitright
+
 " import plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
@@ -41,6 +46,7 @@ autocmd BufReadPost *
 " plugin configs
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/airline.vim
 
 " Nerdtree
 "

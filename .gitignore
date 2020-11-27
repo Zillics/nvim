@@ -8,6 +8,7 @@
 !plug-config/
 !plug-config/*
 !init.vim
+!README.md
 !.vimrc
 # never include these
 *~

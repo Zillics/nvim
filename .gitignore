@@ -10,6 +10,7 @@
 !init.vim
 !README.md
 !.vimrc
+!coc-settings.json
 # never include these
 *~
 *.swap

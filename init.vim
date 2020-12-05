@@ -11,6 +11,10 @@ set splitright
 " import plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
+" Files to ignore
+let g:NERDTreeRespectWidIgnore = 1
+set wildignore+=*/tmp/*,*.so,*swp,*.zip,*.o,*.d,*.git/*,*__pycache__/*,*.pyc,*.patch,*.csv,*site-packages/*
+
 let g:blamer_enabled = 1 " Set git blame on
 let g:doxygen_enhanced_color=1
 let g:load_doxygen_syntax=1

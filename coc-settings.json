@@ -1,8 +1,5 @@
 {
-    "python.setInterpreter": "/usr/bin/python",
-    "python.setLinter": "flake8",
     "coc.preferences.formatOnSaveFiletypes": [
-        "python",
         "markdown",
         "json",
         "jsonc"

@@ -12,10 +12,10 @@ set splitright
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 " Files to ignore
-let g:NERDTreeRespectWidIgnore = 1
+let g:NERDTreeRespectWildIgnore = 1
 set wildignore+=*/tmp/*,*.so,*swp,*.zip,*.o,*.d,*.git/*,*__pycache__/*,*.pyc,*.patch,*.csv,*site-packages/*
 
-let g:blamer_enabled = 1 " Set git blame on
+let g:blamer_enabled = 1
 let g:doxygen_enhanced_color=1
 let g:load_doxygen_syntax=1
 
@@ -38,8 +38,6 @@ colorscheme gruvbox
 
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
-
-let g:vim_indent_guides_start_level = 2
 
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |

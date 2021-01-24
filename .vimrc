@@ -7,14 +7,20 @@ filetype plugin indent on
 set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
-" " On pressing tab, insert 4 spaces
+" On pressing tab, insert 4 spaces
 set expandtab
+" in makefiles, don't expand tabs to spaces, since actual tab characters are
+" needed, and have indentation at 8 chars to be sure that all indents are tabs
+" (despite the mappings later):
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
 " autoread file if it has been changed outside vim
 set autoread
 " continue line horizontally forever
 set nowrap
 " line numbering on
-set number
+set number relativenumber
+set nu rnu
 set signcolumn=yes
 set laststatus=2
 set termguicolors

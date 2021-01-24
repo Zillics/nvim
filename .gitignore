@@ -11,6 +11,9 @@
 !README.md
 !.vimrc
 !coc-settings.json
-# never include these
+!/ftplugin
+!/ftplugin/*
+
+# ...but never include these:
 *~
 *.swap

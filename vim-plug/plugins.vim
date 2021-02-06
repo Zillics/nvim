@@ -42,8 +42,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'preservim/nerdtree' 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Auto completion, intellisense, LSP etc
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Floating terminal
     Plug 'voldikss/vim-floaterm'
     " Fuzzy file search with Ctrl-p

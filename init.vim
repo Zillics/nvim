@@ -56,13 +56,15 @@ let NERDTreeShowHidden=1
 
 " Ctrl p
 let g:ctrlp_working_path_mode = '' "ignore all files except ones existing in current working dir
+let g:ctrlp_user_command = [
+    \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
+    \ 'find %s -type f'
+    \ ]
 
 " Key shortcuts
 "
 nnoremap <leader>t :FloatermNew! --wintype=floating --position=bottomleft --height=25 --width=150 if [[ -n $(find . -name "activate")  ]]; then source $(find . -name "activate");fi<CR>
 nnoremap <leader>r :FloatermNew! --wintype=floating --position=topright --width=0.5 --height=0.95 if [[ -n $(find . -name "activate")  ]]; then source $(find . -name "activate");fi<CR>
-nnoremap <F7> :tabp<CR>
-nnoremap <F8> :tabn<CR>
 " Terminal window navigation
 tnoremap <C-h> <C-\><C-N><C-w>h
 tnoremap <C-j> <C-\><C-N><C-w>j

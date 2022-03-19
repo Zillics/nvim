@@ -2,12 +2,17 @@ let mapleader="\<Space>"
 
 set noerrorbells
 
-filetype plugin indent on
-" show existing tab with 4 spaces width
+" File type detection on
+filetype on
+" Run ftplugin file associated with given file type
+filetype plugin on
+" Load indent file of given file type
+filetype indent on
+" all tabs will APPEAR to be indented with this many spaces
 set tabstop=4
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
+set shiftwidth=2
+" pressing tab will insert spaces instead of tab byte
 set expandtab
 " in makefiles, don't expand tabs to spaces, since actual tab characters are
 " needed, and have indentation at 8 chars to be sure that all indents are tabs
@@ -38,9 +43,9 @@ if !isdirectory($HOME."/.vim/undo-dir")
 set undodir=~/.vim/undo-dir
 set undofile
 
-" spelling
-set spell spelllang=en_us
-set spellcapcheck=""
+" Key shortcuts
+nnoremap <F9> :tabp<CR>
+nnoremap <F10> :tabn<CR>
 
 " Make tab vs spaces visible
 set lcs=trail:·,tab:»·

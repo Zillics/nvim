@@ -36,8 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'terryma/vim-multiple-cursors'
     " Improve annoying search highlighting
     Plug 'haya14busa/incsearch.vim'
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'preservim/nerdtree' 
     " Auto pairs for '(' '[' '{'
@@ -52,4 +50,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     " Edit vertically multiple lines
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+    " Format and indent C/C++ based on clang-format
+    Plug 'rhysd/vim-clang-format'
+    " Syntax highlighting for Dockerfile
+    Plug 'ekalinin/Dockerfile.vim'
+
 call plug#end()
